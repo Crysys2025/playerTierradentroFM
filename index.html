@@ -231,7 +231,7 @@ function toggleMute() {
 }
 
 function fetchMetadata() {
-  fetch("https://free.miradio.pro/icy?url=https://stream.zeno.fm/xv084ye33mruv")
+  fetch("https://api.zeno.fm/mounts/metadata/subscribe/xv084ye33mruv")
     .then(response => response.json())
     .then(data => {
       if (data.title) {
@@ -249,7 +249,7 @@ fetchMetadata();
 
 
 function fetchMetadata() {
-  fetch("https://host.chapinradios.com/archivos/api.php?url=https://zenoplay.zenomedia.com/api/zenofm/nowplaying/xv084ye33mruv")
+  fetch("https://api.zeno.fm/mounts/metadata/subscribe/xv084ye33mruv")
     .then(response => response.json())
     .then(data => {
       const titleElem = document.querySelector(".song-info h2");
@@ -276,7 +276,7 @@ fetchMetadata();
 
 
 function fetchMetadata() {
-  fetch("https://free.miradio.pro/icy?url=https://stream.zeno.fm/xv084ye33mruv")
+  fetch("https://api.zeno.fm/mounts/metadata/subscribe/xv084ye33mruv")
     .then(response => response.json())
     .then(data => {
       const titleElem = document.querySelector(".song-info h2");
@@ -308,7 +308,7 @@ fetchMetadata();
 
 
 function fetchMetadata() {
-  fetch("https://free.miradio.pro/icy?url=https://stream.zeno.fm/xv084ye33mruv")
+  fetch("https://api.zeno.fm/mounts/metadata/subscribe/xv084ye33mruv")
     .then(response => response.json())
     .then(data => {
       const titleElem = document.querySelector(".song-info h2");
