@@ -200,7 +200,7 @@
     </div>
   </div>
   <div class="album-cover" style="animation: slideUp 0.6s ease-out;">
-    <img alt="Carátula" src="https://i.imgur.com/bX2BaT0.png" />
+    <img alt="Carátula" src="https://i.imgur.com/flqCmC0.png" />
   </div>
 </div>
 
@@ -294,12 +294,12 @@ function fetchMetadata() {
       if (data.artwork && data.artwork.xl) {
         coverImg.src = data.artwork.xl;
       } else {
-        coverImg.src = "https://i.imgur.com/bX2BaT0.png";
+        coverImg.src = "https://i.imgur.com/flqCmC0.png";
       }
     })
     .catch(err => {
       console.error("Error cargando metadata:", err);
-      document.querySelector(".album-cover img").src = "https://i.imgur.com/bX2BaT0.png";
+      document.querySelector(".album-cover img").src = "https://i.imgur.com/flqCmC0.png";
     });
 }
 
@@ -327,7 +327,7 @@ function fetchMetadata() {
       if (data.artwork && data.artwork.xl) {
         coverImg.src = data.artwork.xl;
       } else {
-        coverImg.src = "https://i.imgur.com/bX2BaT0.png";
+        coverImg.src = "https://i.imgur.com/flqCmC0.png";
       }
 
       if (data.spotify) {
@@ -342,7 +342,7 @@ function fetchMetadata() {
     })
     .catch(err => {
       console.error("Error cargando metadata:", err);
-      document.querySelector(".album-cover img").src = "https://i.imgur.com/bX2BaT0.png";
+      document.querySelector(".album-cover img").src = "https://i.imgur.com/flqCmC0.png";
     });
 }
 
